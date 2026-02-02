@@ -23,10 +23,9 @@
       margin: 0;
       min-height: 100svh;
       display: grid;
-      place-items: center;
       background: radial-gradient(circle at top, var(--bg2), var(--bg1));
       font-family: system-ui, sans-serif;
-      overflow: hidden;
+      overflow-y: auto;
       padding: 16px;
     }
 
@@ -41,6 +40,7 @@
     }
 
     .card {
+      margin: auto;
       width: min(720px, 92vw);
       padding: 26px 22px;
       background: var(--card);
@@ -118,6 +118,8 @@
 
     .fireworks {
       width: min(380px, 90vw);
+      max-height: 50vh;
+      object-fit: contain;
       margin: 0 auto;
       display: block;
     }
